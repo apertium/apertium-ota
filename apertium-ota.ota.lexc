@@ -3,17 +3,18 @@
 Multichar_Symbols
 
 ! Part of speech categories
-%<n%>       ! Noun
+%<n%>           ! Noun
+%<cnjcoo%>      ! 
 
-%<pl%>      ! Plural
-%<sg%>      ! Singular
+%<pl%>          ! Plural
+%<sg%>          ! Singular
 
-%<nom%>     ! 
-%<dat%>     ! 
-%<acc%>     ! 
-%<gen%>     ! 
-%<loc%>     ! 
-%<abl%>     ! 
+%<nom%>         ! 
+%<dat%>         ! 
+%<acc%>         ! 
+%<gen%>         ! 
+%<loc%>         ! 
+%<abl%>         ! 
 
 %{N%}
 %{I%}
@@ -27,6 +28,7 @@ Multichar_Symbols
 
 LEXICON Root
 
+Conjunctions ;
 Nouns ;
 
 LEXICON CASES
@@ -41,16 +43,23 @@ LEXICON N1
 
 %<n%>: CASES ; 
 
+LEXICON CC
+
+%<cnjcoo%>: # ;
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                          L E X I C O N                                  !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+LEXICON Conjunctions
+
+و:و CC ; ! "ve"
 
 LEXICON Nouns
 
 
-گول:گول N1 ; ! "lake"
-طاوشان:طاوشان N1 ; ! "rabbit"
+گول:گول N1 ; ! "köl"
+طاوشان:طاوشان N1 ; ! "tavşan"
 پاشا:پاشا N1 ; ! "paşa"
 
 عدالت:عدالت N1 ; ! "ʿadālet"

@@ -12,6 +12,7 @@
 /apertium-ota.post-ota.dix -text
 /autogen.sh -text
 /configure.ac -text
+dev/countstems.sh -text
 dev/spellrelax.twol -text
 /modes.xml -text
 /ota.prob -text svneol=unset#unset
