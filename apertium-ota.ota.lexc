@@ -18,7 +18,9 @@ Multichar_Symbols
 
 %{N%}
 %{I%}
+%{s%}
 %{ء%}
+%{n%}
 
 %>
 
@@ -39,9 +41,24 @@ LEXICON CASES
 %<loc%>:%>ده‎ # ;
 %<abl%>:%>دن‎ # ;
 
+LEXICON POSSESSIVES
+
+%<px3sp%>:%>%{s%}%{I%}%{n%} CASES ; 
+
+LEXICON PLURAL
+
+%<pl%>:%>لهر CASES ;
+%<pl%>:%>لهر POSSESSIVES ;
+
+LEXICON FULL-NOMINAL-INFLECTION
+
+PLURAL ;
+CASES ;
+POSSESSIVES ;
+
 LEXICON N1 
 
-%<n%>: CASES ; 
+%<n%>: FULL-NOMINAL-INFLECTION ; 
 
 LEXICON CC
 
