@@ -4,6 +4,8 @@ Multichar_Symbols
 
 ! Part of speech categories
 %<n%>           ! Noun
+%<num%>         ! 
+%<det%>         !
 %<cnjcoo%>      ! 
 
 %<pl%>          ! Plural
@@ -15,6 +17,8 @@ Multichar_Symbols
 %<gen%>         ! 
 %<loc%>         ! 
 %<abl%>         ! 
+
+%<dem%>
 
 %{N%}
 %{I%}
@@ -31,7 +35,10 @@ Multichar_Symbols
 LEXICON Root
 
 Conjunctions ;
+Determiners ;
 Nouns ;
+Punctuation ; 
+Digits ; 
 
 LEXICON CASES
 
@@ -60,6 +67,10 @@ LEXICON N1
 
 %<n%>: FULL-NOMINAL-INFLECTION ; 
 
+LEXICON DET-DEM 
+
+%<det%>%<dem%>: # ;
+
 LEXICON CC
 
 %<cnjcoo%>: # ;
@@ -71,6 +82,10 @@ LEXICON CC
 LEXICON Conjunctions
 
 و:و CC ; ! "ve"
+
+LEXICON Determiners
+
+بو:بو DET-DEM ; ! "bu"
 
 LEXICON Nouns
 
@@ -153,3 +168,11 @@ LEXICON Nouns
 زندان:زندان N1 ; ! "zindān"
 
 
+
+LEXICON DIGIT
+
+%<num%>: # ;
+
+LEXICON Digits 
+
+<[ ۰ | ۱ | ١ | ۲ | ۳ | ۴ | ۵ | ٥ | ۶ | ۷ | ۸ | ٢ | ٦ | ۹ ]+> DIGIT ;
