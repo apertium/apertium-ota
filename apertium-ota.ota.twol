@@ -1,0 +1,24 @@
+Alphabet
+
+ا  ء  ب  پ  ت  ث  ج  چ  ح  خ  د  ذ  ر  ز  ژ  س  ش  ص  ض  ط  ظ  ع  غ  ف  ق  ك  گ  ڭ  ل  م  ن  و  ه  ی 
+
+
+%{N%}:ن %{N%}:0
+%{I%}:ی
+
+%>:0  
+
+;
+
+Sets
+
+Vow = ا  و  ه  ی  ;
+
+Cns = ء  ب  پ  ت  ث  ج  چ  ح  خ  د  ذ  ر  ز  ژ  س  ش  ص  ض  ط  ظ  ع  غ  ف  ق  ك  گ  ڭ  ل  م  ن  ; 
+
+Rules 
+
+"Remove suffix vowel with vowel-ending stem"
+%{N%}:0 <=> :Cns %>: _ ;
+
+
